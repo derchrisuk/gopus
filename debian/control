@@ -1,0 +1,21 @@
+Source: golang-github-derchrisuk-gopus
+Section: devel
+Priority: optional
+Maintainer: derchris <derchris@me.com>
+Uploaders: derchris <derchris@me.com>
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               libopenal-dev,
+               libopus-dev
+Standards-Version: 4.5.0
+Homepage: https://github.com/derchrisuk/gopus
+Vcs-Browser: https://github.com/derchrisuk/gopus
+Vcs-Git: https://github.com/derchrisuk/gopus.git
+XS-Go-Import-Path: github.com/derchrisuk/gopus
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-derchrisuk-gopus-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: gopus is a Go binding for the Opus audio codec.
